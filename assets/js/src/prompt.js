@@ -76,7 +76,7 @@ const promptInternInfo = [
     },
     {
         type: 'input',
-        message: `What is your engineer\'s email?`,
+        message: `What is your intern\'s email?`,
         name: 'email'
     },
     {
