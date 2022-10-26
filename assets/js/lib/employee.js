@@ -15,17 +15,17 @@ class Employee {
         this.email = email
     }
 
-    getName() {
-        
-    }
+    //getName() {
 
-    getId()
+    //}
 
-    getEmail()
+    //getId()
 
-    getRole() {
-        return 'Employee';
-    }
+    //getEmail()
+
+    //getRole() {
+       // return 'Employee';
+    //}
 
 }
 

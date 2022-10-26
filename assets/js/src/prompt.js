@@ -5,22 +5,22 @@ const promptManager = [
     {
         type: 'input',
         message: 'What is the team manager\'s name?',
-        name: 'managerName',
+        name: 'name',
     },
     {
         type: 'input',
         message: 'What is the team manager\'s id?',
-        name: 'managerId'
+        name: 'id'
     },
     {
         type: 'input',
         message: 'What is the team manager\'s email?',
-        name: 'managerEmail'
+        name: 'email'
     },
     {
         type: 'input',
         message: 'What is the team manager\'s office number?',
-        name: 'managerOffice'
+        name: 'office'
     }
     
 ];
@@ -38,12 +38,22 @@ const promptEngineerInfo = [
     {
         type: 'input',
         message: `What is your engineers\'s name?`,
-        name: 'teamName'
+        name: 'name'
+    },
+    {
+        type: 'input',
+        message: `What is your engineer\'s id?`,
+        name: 'id'
+    },
+    {
+        type: 'input',
+        message: `What is your engineer\'s email?`,
+        name: 'email'
     },
     {
         type: 'input',
         message: 'What is your engineer\'s Github profile?',
-        name: 'engineerGithub'
+        name: 'github'
     },
     {
         type: 'list',
@@ -57,12 +67,22 @@ const promptInternInfo = [
     {
         type: 'input',
         message: 'What is your intern\'s name?',
-        name: 'internName'
+        name: 'name'
+    },
+    {
+        type: 'input',
+        message: `What is your intern\'s id?`,
+        name: 'id'
+    },
+    {
+        type: 'input',
+        message: `What is your engineer\'s email?`,
+        name: 'email'
     },
     {
         type: 'input',
         message: 'What school does your intern attend?',
-        name: 'internSchool'
+        name: 'school'
     },
     {
         type: 'list',

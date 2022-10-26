@@ -13,7 +13,17 @@ class Intern extends Employee {
         this.role = role;
     }
 
-    getSchool()
+    getSchool() {
+        return this.school;
+    }
+
+    getRole() {
+        return 'Intern';
+    }
+
+    getIcon() {
+        return '📜';
+    }
 }
 
 module.exports = Intern;

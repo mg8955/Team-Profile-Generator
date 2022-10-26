@@ -7,14 +7,19 @@ const Employee = require('./employee');
 
 class Manager extends Employee {
     constructor(name, id, email, officeNumber, role) {
-        super(name, id, email)
+        super(name, id, email);
         this.officeNumber = officeNumber;
         this.role = role;
-        super(name, id, email);
+        
     }
 
-    getRole()
+    getRole() {
+        return 'Manager';
+    }
+
+    getIcon() {
+        return '☕';
+    }
 }
 
 module.exports = Manager;
-// const manager1 = new Manager(promptManager.)
