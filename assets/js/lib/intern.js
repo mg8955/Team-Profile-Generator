@@ -13,8 +13,8 @@ class Intern extends Employee {
         this.role = role;
     }
 
-    getSchool() {
-        return this.school;
+    getMoreInfo() {
+        return `School: ${this.school}`;
     }
 
     getRole() {

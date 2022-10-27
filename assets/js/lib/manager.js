@@ -13,6 +13,10 @@ class Manager extends Employee {
         
     }
 
+    getMoreInfo() {
+        return `Office Number: ${this.officeNumber}`;
+    }
+
     getRole() {
         return 'Manager';
     }

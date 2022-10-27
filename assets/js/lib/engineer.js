@@ -1,9 +1,3 @@
-// In addition to `Employee`'s properties and methods, `Engineer` will also have the following:
-
-// * `github`&mdash;GitHub username
-// * `getGithub()`
-// * `getRole()`&mdash;overridden to return `'Engineer'`
-
 const Employee = require('./employee');
 
 class Engineer extends Employee {
@@ -13,8 +7,8 @@ class Engineer extends Employee {
         this.role = role;
     }
 
-    getGithub() {
-        return this.github;
+    getMoreInfo() {
+        return `Github Profile: <a href='https://www.github.com/${this.github}'>${this.github}</a>`;
     }
 
     getRole() {

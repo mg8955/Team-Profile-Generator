@@ -1,6 +1,3 @@
-const inquirer = require('inquirer');
-// const memberData = require('./page-template');
-
 const promptManager = [
     {
         type: 'input',
