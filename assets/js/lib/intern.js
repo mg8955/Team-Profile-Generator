@@ -13,6 +13,10 @@ class Intern extends Employee {
         this.role = role;
     }
 
+    getEmail() {
+        return `Email: <a href='mailto:${this.email}'></a>`;
+    }   
+    
     getMoreInfo() {
         return `School: ${this.school}`;
     }

@@ -6,12 +6,14 @@ const Manager = require('../lib/manager');
 const Engineer = require('../lib/engineer');
 const Intern = require('../lib/intern');
 
+// Imports static html for the page
 const build = require('./pagebuild');
 const htmlAbove = build.htmlAbove;
 const htmlBelow = build.htmlBelow;
 
 const team = [];
 
+// Initializes the prompts for team entry.
 const addManager = () => {
     inquirer.prompt(prompt.promptManager)
     .then((response) => {
@@ -21,6 +23,7 @@ const addManager = () => {
     }
 )}
 
+// Allows user to select which role to add
 const addMemberRole = () => {
     inquirer.prompt(prompt.promptAddTeamMember)
     .then((response) => {
@@ -60,6 +63,7 @@ const addIntern = () => {
     })
 }
 
+// Builds dynamic cards based on user input for team profiles
 const buildCards = () => {
     let element = '';
     team.forEach(function(teamMember) {   
@@ -72,7 +76,7 @@ const buildCards = () => {
                         </div>
                             <ul class="list-group list-group-flush">
                             <li class="list-group-item">ID: ${teamMember.id}</li>
-                            <li class="list-group-item">Email: ${teamMember.email}</li>
+                            <li class="list-group-item">Email: <a href='mailto:${teamMember.email}'>${teamMember.email}</a></li>
                             <li class="list-group-item">${teamMember.getMoreInfo()}</li>
                         </ul>
                     </div>
@@ -82,6 +86,7 @@ const buildCards = () => {
         buildPage(htmlTeam);       
 }
 
+// Assembles the index.html page
 const buildPage = (htmlTeam) => {
     const html = htmlAbove + htmlTeam + htmlBelow;
     fs.writeFile('../../../index.html', html, (err) => {

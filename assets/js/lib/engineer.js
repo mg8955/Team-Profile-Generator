@@ -7,6 +7,10 @@ class Engineer extends Employee {
         this.role = role;
     }
 
+    getEmail() {
+        return `Email: <a href='mailto:${this.email}'></a>`;
+    }   
+     
     getMoreInfo() {
         return `Github Profile: <a href='https://www.github.com/${this.github}'>${this.github}</a>`;
     }

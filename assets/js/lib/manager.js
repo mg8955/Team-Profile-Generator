@@ -13,6 +13,10 @@ class Manager extends Employee {
         
     }
 
+    getEmail() {
+        return `Email: <a href='mailto:${this.email}'></a>`;
+    }   
+    
     getMoreInfo() {
         return `Office Number: ${this.officeNumber}`;
     }
